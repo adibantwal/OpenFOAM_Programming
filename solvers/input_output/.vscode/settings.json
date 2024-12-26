@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "helloworld.C": "cpp",
+        "printhelloworld.C": "cpp",
+        "inputoutput.C": "cpp",
+        "TimeIO.C": "cpp",
+        "charIO.C": "cpp",
+        "dictionary.C": "cpp"
+    }
+}
