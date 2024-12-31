@@ -1,0 +1,85 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2012                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _7bdb509494-20201222 OPENFOAM=2012
+Arch   : "LSB;label=32;scalar=64"
+Exec   : surfaceFeatureExtract
+Date   : Dec 30 2024
+Time   : 17:04:54
+Host   : LAPTOP-TT50BSP8
+PID    : 58453
+I/O    : uncollated
+Case   : /home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+Note: Feature line extraction only valid on closed manifold surfaces
+
+Reading surfaceFeatureExtractDict
+
+Surfaces     : buildings.obj
+Output       : buildings
+Load options : offset
+Write options: writeObj=yes writeVTK=off
+
+Statistics:
+Triangles    : 400020 in 1 region(s)
+Vertices     : 200062
+Bounding Box : (8.19019 18.6039 0) (237.283 158.66 76)
+
+Constructing feature set from included angle 150
+Selecting edges based purely on geometric tests: no
+
+Initial Feature set:
+    points : 2596
+    edges  : 16107
+    of which
+        region edges   : 0
+        external edges : 9635
+        internal edges : 6472
+
+Final Feature set:
+    points : 14492
+    of which
+        convex             : 739
+        concave            : 13
+        mixed              : 1844
+        non-feature        : 11896
+    edges  : 16107
+    of which
+        external edges     : 11399
+        internal edges     : 4708
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings"
+Writing 739 convex feature points to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_convexFeaturePts.obj"
+Writing 13 concave feature points to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_concaveFeaturePts.obj"
+Writing 1844 mixed feature points to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_mixedFeaturePts.obj"
+Writing 1844 mixed feature point structure to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_mixedFeaturePtsStructure.obj"
+Writing 11399 external edges to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_externalEdges.obj"
+Writing 4708 internal edges to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_internalEdges.obj"
+Writing 0 flat edges to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_flatEdges.obj"
+Writing 0 open edges to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_openEdges.obj"
+Writing 0 multiple edges to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_multipleEdges.obj"
+Writing 0 region edges to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_regionEdges.obj"
+Writing 16107 edge directions to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/extendedFeatureEdgeMesh/buildings_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/aditya/OpenFOAM/aditya-v2012/run/boundary_conditions/constant/triSurface/buildings.eMesh"
+ExecutionTime = 1.26 s  ClockTime = 1 s
+
+End
+

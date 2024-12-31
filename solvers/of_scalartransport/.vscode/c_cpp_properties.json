@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/aditya/openfoam_old/OpenFOAM-v2012/**",
+                "/home/aditya/openfoam_old/OpenFOAM-v2012/src",
+                "/home/aditya/openfoam_old/OpenFOAM-v2012/applications",
+                "/home/aditya/openfoam_old/OpenFOAM-v2012/build/linux64GccDPInt32Opt"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "helloworld.C": "cpp",
+        "printhelloworld.C": "cpp",
+        "meshInvestigate.C": "cpp",
+        "fvMeshGeometry.C": "cpp",
+        "typeinfo": "cpp",
+        "ofScalarTransport.C": "cpp",
+        "IOobject.C": "cpp",
+        "fvmDiv.C": "cpp",
+        "fvmLaplacian.C": "cpp"
+    }
+}
